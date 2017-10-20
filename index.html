@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Snip</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:400,600,700,800&amp;subset=hebrew" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="inner">
+                <div class="input-container">
+                    <input id="addItem" type="text" placeholder="Add a snip..." tabindex="1" />
+                    <button class="add">
+                        <div class="icon">+</div>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="inner">
+                <div class="items"></div>
+
+                <div class="message empty">
+                    <div class="inner"><img id="message-icon" src="svg/empty-sad-face.svg"><br>It's so empty here!<br>Add some snips...</div>
+                </div>
+
+                <div class="message error hidden">
+                    <div class="inner">
+                        <div class="error-text"></div>
+                        <button class="ok">OK</button>
+                    </div>
+                </div>
+
+                <div class="message help hidden">
+                    <div class="inner">
+                        <div class="desc">
+                            A snip is a draggable object containing text. It can be dragged and then dropped inside a text input.
+                        </div>
+                        <div class="how-to">Add new snips using the field at the top.
+                            <br> Left click: show full snip.
+                            <br> Ctrl + Left click: remove a snip.
+                        </div>
+                        <button class="ok">GOT IT</button>
+                        <div class="contact">Found a bug? Have an idea? | <a href="mailto:yarivfrd@gmail.com">YarivFrd@gmail.com</a></div>
+                    </div>
+                </div>
+
+                <div class="message full-text hidden">
+                    <div class="inner">
+                        <div class="text"></div>
+                        <button class="ok">BACK</button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <footer>
+            <div class="inner">
+                <button class="help">?</button>
+                <div class="credit"><a href="http://yarivfruend.com/en" target="_blank">By Yariv Fruend</a></div>
+
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
